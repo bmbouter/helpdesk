@@ -1,0 +1,250 @@
+
+<!DOCTYPE html> 
+<html> 
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<title>Multi-page template</title> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+        <script type="text/javascript">
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-28926333-1']);
+          _gaq.push(['_trackPageview']);
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+          $( '[data-role=page]' ).live( 'pageshow', function (event, ui) {
+            try 
+            {
+              if ( location.hash )
+              {
+            	url = location.hash;
+              }
+              else 
+              {
+               url = defaulturl;
+              }
+              _gaq.push( ['_trackPageview', url] );
+            } 
+            catch( error ) 
+            {
+	      // Oh no! Call the catch logger
+            }
+          });
+        </script>
+</head> 
+
+	
+<body> 
+
+<!-- Start of page: #home -->
+
+<div data-role="page" id="home" data-theme="b">
+
+	<div data-role="header">
+		<h1>Friday Institute Support FAQ</h1>
+	</div><!-- /header -->
+
+
+	<div data-role="content" >	
+		<h3>Click a FAQ question below for help with that issue</h3>
+		<p><a href="#data.fi.ncsu.edu" data-role="button">Connecting to data.fi.ncsu.edu</a></p>
+		<p><a href="#SpamProblems" data-role="button">Spam Problems</a></p>
+	</div><!-- /content -->
+
+
+</div><!-- /page home -->
+
+<!-- Start of page: #SpamProblems -->
+<div data-role="page" id="SpamProblems" data-theme="b">
+	<div data-role="header">
+				<a href="#home" data-icon="home">Home</a>
+			<h1>Friday Institute Support FAQ</h1>
+	</div><!-- /header -->
+	
+	<div data-role="content">
+		<h2>Problems with emails going to spam</h2>
+		<h3>Please select deisred button for you email account type.</h3>
+		<p><a href="#Gmail" data-role="button">Gmail</a></p>
+		<p><a href="#postini" data-role="button">Postini</a></p>
+		<p><a href="#DisablePostini" data-role="button">Disable Postini</a></p>
+	</div><!-- Content -->
+	
+</div><!-- /page SpamProblems -->
+
+<!-- Start of page: Disabel Postini-->
+<div data-role="page" id="DisablePostini" data-theme="b">
+	<div data-role="header">
+				<a href="#home" data-icon="home">Home</a>
+			<h1>Friday Institute Support FAQ</h1>
+	</div><!-- /header -->
+	
+	<div data-role="content">
+		<h2>Disable the use of Postini</h2>
+		<p>1) Log into your postini account at <a href="http://junkmail.ncsu.edu" target="_blank">junkmail.ncsu.edu</a></p>
+		<p><img src="login.png" alt="Login" width="525" height="344"/></p>
+		<p>2) Once there, press the My Settings button in the right corner.</p>
+		<p><img src="MySettingsJunk.png" alt="My Settings Junk" width="1355" height="511"/></p>
+		<p>3) Next press the Manage Junk Filters link in the Junk Settings.</p>
+		<p>4) A new page will open. On the left side of the page will be a Junk Email Blocking area.</p>
+		<p><img src="JunkEmailBlocking.png" alt="Junk Email Blocking" width="1394" height="272"/></p>
+		<p>5) Press the ACTIVATED button that is in green. It will then change to red and sa DEACTIVATED. Then press Save Settings. </p>
+		<p>6) You are now free to logout and Postini will be disabled.</p>
+
+	</div><!--Content-->
+
+</div><!-- /page Disable Postini-->
+
+<!-- Start of page: Postini-->
+<div data-role="page" id="postini" data-theme="b">
+	<div data-role="header">
+				<a href="#home" data-icon="home">Home</a>
+			<h1>Friday Institute Support FAQ</h1>
+	</div><!-- /header -->
+	
+	<div data-role="content">
+		<h2>Set up a filter to catch emails from fridayinstitute@ncsu.edu</h2>
+		<p>1) Log into your postini account at <a href="http://junkmail.ncsu.edu" target="_blank">junkmail.ncsu.edu</a></p>
+		<p><img src="login.png" alt="Login" width="525" height="344"/></p>
+		<p>2) Once there, press the My Settings button in the right corner.</p>
+		<p><img src="MySettings.png" alt="My Settings" width="1355" height="511"/></p>
+		<p>3) Next press the Approve Senders link in the Junk Settings.</p>
+		<p>4) A new page will open. On the left side of the page will be an Approved Senders area.</p>
+		<p>5) In the Approved senders area, type fridayinstitute@ncsu.edu and press Update Approved Senders.</p>
+		<p><img src="ApprovedSenders.png" alt="Approved Senders" width="518" height="457"/></p>
+		<p>6) You are now free to logout and all futher emails sent to fridayinstitute@ncsu.edu will go directly to your inbox.</p>
+	</div><!--Content-->
+
+</div><!-- /page Postini-->
+
+<!-- Start of page: #Gmail -->
+<div data-role="page" id="Gmail" data-theme="b">
+	<div data-role="header">
+				<a href="#home" data-icon="home">Home</a>
+			<h1>Friday Institute Support FAQ</h1>
+	</div><!-- /header -->
+	
+	<div data-role="content">
+		<h2>Set up a filter to catch emails from fridayinstitute@ncsu.edu</h2>
+		<p>1) Log into your Gmail account at <a href="http://gmail.ncsu.edu" target="_blank">gmail.ncsu.edu</a></p>
+		<p>2) At the top right corner press the button that looks like a gear.</p>
+		<p><img src="settings.png" alt="Settings Menu" width="232" height="323"/></p>
+		<p>3) From the drop down menu, press the Settings button.</p>
+		<p>4) Once on the Settings Page, press the Filters tab.</p>
+		<p><img src="Filter.png" alt="Filter Tab" width="1052" height="94"/></p>
+		<p>5) At the bottom of the filters page, press the "Create Filter" button.</p>
+		<p><img src="CreateFilter.png" alt="Create Filter" width="202" height="70"/></p>
+		<p>6) A small window will open up. In the from line, type fridayinstitute@ncsu.edu. Then press the "Create filter with this search" button.</p>
+		<p><img src="addFilter.png" alt="Add Filter" width="518" height="351"/></p>
+		<p>7) A series of check bokes will appear. Check the "Never sent it to Spam" button as well as the "Also apply filter to # matching conversation".</p>
+		<p>8) Press the "Create filter" button and the filter will be created.</p>
+		<p><img src="SetupFilter.png" alt="Filter setup" width="512" height="389"/></p>
+	</div><!--Content-->
+
+</div><!-- /page Gmail-->
+
+<!-- Start of page: #home -->
+<div data-role="page" id="data.fi.ncsu.edu" data-theme="b">
+
+	<div data-role="header">
+                <a href="#home" data-icon="home">Home</a>
+		<h1>Friday Institute Support FAQ</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<h2>Connecting to data.fi.ncsu.edu</h2>
+		<p>Are you connecting from on or off campus?</p>
+		<p><a href="#data.fi.ncsu.edu.connect" data-role="button">On Campus</a></p>	
+		<p><a href="#data.fi.ncsu.edu.offcampus" data-role="button">Off Campus</a></p>	
+		
+	</div><!-- /content -->
+
+</div><!-- /page home -->
+
+<!-- Start of page: #data.fi.ncsu.edu.connect -->
+<div data-role="page" id="data.fi.ncsu.edu.connect" data-theme="b">
+
+	<div data-role="header">
+                <a href="#home" data-icon="home">Home</a>
+		<h1>Friday Institute Support FAQ</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<h2>Connecting to data.fi.ncsu.edu from a Mac</h2>
+		<p>1. Click on Finder from the dock then on the Top Menu Bar Click GO</p>
+                <p>2. Scroll down to the bottom to select Connect to Server</p>
+                <p>3. Enter the smb://data.fi.ncsu.edu/ as the URL and click "Connect"</p>
+                <p>4. Select "Registered User"</p>
+                <p>5. Type your UNITY user name and data.fi.ncsu.edu password.  NOTE: this is <b>NOT</b> your UNITY Password</p>
+                <p>6. Click Connect</p>
+                <p>7. Select the Project you want</p>
+
+	</div><!-- /content -->
+
+</div><!-- /page data.fi.ncsu.edu.connect -->
+
+<!-- Start of page: #vpn.mac -->
+<div data-role="page" id="vpn.mac" data-theme="b">
+
+	<div data-role="header">
+                <a href="#home" data-icon="home">Home</a>
+		<h1>Friday Institute Support FAQ</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<h2>Connecting to the NCSU VPN on a Mac</h2>
+		<p>1. Goto your Applications folder</p>	
+		<p>2. Go into the "Cisco" folder</p>	
+		<p>3. Double click the Cisco AnyConnect VPN Client Application</p>	
+		<p>4. Where it says "Connect To:" use "vpn.ncsu.edu"</p>	
+		<p>5. Enter your UNITY username and password and click "Connect"</p>	
+		<p>6. If you receive no errors then you are connected</p>	
+		<p><a href="#data.fi.ncsu.edu.connect" data-role="button">The VPN is Connected</a></p>	
+		<p><a href="#contactmustaphavpn" data-role="button" data-rel="dialog">I Need Help</a></p>	
+		
+	</div><!-- /content -->
+
+</div><!-- /page vpn.mac -->
+
+<!-- Start of page: #data.fi.ncsu.edu.offcampus -->
+<div data-role="page" id="data.fi.ncsu.edu.offcampus" data-theme="b">
+
+	<div data-role="header">
+                <a href="#home" data-icon="home">Home</a>
+		<h1>Friday Institute Support FAQ</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<h2>Connecting to data.fi.ncsu.edu from Off Campus</h2>
+		<p>Have you connected to the NCSU VPN yet?</p>
+		<p><a href="#data.fi.ncsu.edu.connect" data-role="button">Yes</a></p>	
+		<p><a href="#vpn.mac" data-role="button">No</a></p>	
+		<p><a href="#contactmustaphavpn" data-role="button" data-rel="dialog">I am not sure</a></p>	
+		
+	</div><!-- /content -->
+
+</div><!-- /page data.fi.ncsu.edu.offcampus -->
+
+<!-- Start of page: #contactmustaphavpn -->
+<div data-role="page" id="contactmustaphavpn" data-theme="b">
+
+	<div data-role="header">
+                <a href="#home" data-icon="home">Home</a>
+		<h1>Friday Institute Support FAQ</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<h2>E-mail Mustapha</h2>
+		<p>1. Ask him to install the NCSU VPN on your computer.</p>		
+		<p>2. Ask him to teach you to connect to NCSU using the VPN.</p>		
+	</div><!-- /content -->
+
+</div><!-- /page contactmustaphavpn -->
+
+</body>
+</html>

@@ -1,0 +1,429 @@
+
+<!DOCTYPE html> 
+<html> 
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<title>Multi-page template</title> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+        <script type="text/javascript">
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-28926333-1']);
+          _gaq.push(['_trackPageview']);
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+          $( '[data-role=page]' ).live( 'pageshow', function (event, ui) {
+            try 
+            {
+              if ( location.hash )
+              {
+            	url = location.hash;
+              }
+              else 
+              {
+               url = defaulturl;
+              }
+              _gaq.push( ['_trackPageview', url] );
+            } 
+            catch( error ) 
+            {
+	      // Oh no! Call the catch logger
+            }
+          });
+        </script>
+</head> 
+
+	
+<body> 
+
+<!-- Start of page: #home -->
+
+<div data-role="page" id="home" data-theme="b">
+
+	<div data-role="header">
+		<h1>Friday Institute Support FAQ</h1>
+	</div><!-- /header -->
+
+
+	<div data-role="content" >	
+		<h3>Click a FAQ question below for help with that issue</h3>
+		<p><a href="#data.fi.ncsu.edu" data-role="button">Connecting to data.fi.ncsu.edu</a></p>
+		<p><a href="#SpamProblems" data-role="button">Spam Problems</a></p>
+		<p><a href="#PrintingToBizHubC360" data-role="button">Printing To Bizhubc630</a></p>
+	</div><!-- /content -->
+	
+
+</div><!-- /page home -->
+
+<!-- Start of page: #PrintingToBizHubC360 -->
+<div data-role="page" id="PrintingToBizHubC360" data-theme="b">
+	<div data-role="header">
+				<a href="#home" data-icon="home">Home</a>
+			<h1>Friday Institute Support FAQ</h1>
+	</div><!-- /header -->
+	<div data-role="content">
+		<h2>Setup to Print to Bizhubc360 Printers.</h2>
+		<p>1) Click on the Start Button in the lower left corner</p>
+		<p><img src="start.png" alt="Start" width="960" height="540"/></p>
+		<p>2) Select the "Devices and Printers" menu on the right side of the Start menu.</p>
+		<p><img src="devices.png" alt="Devices and Printers" width="960" height="540"/></p>
+		<p>3) Right click on your desired Konica Minolta Bizhubc360 Printer.</p>
+		<p><img src="printer.png" alt="Printer" width="960" height="540"/></p>
+		<p>4) Left click on "Printing preferences" in the menu that pops up.</p>
+		<p><img src="preferences.png" alt="Preferences Menu" width="960" height="540"/></p>
+		<p>5) Left click on the "Basic" tab in the window that pops up.</p>
+		<p><img src="basic.png" alt="Basic tab" width="960" height="540"/></p>
+		<p>6) 
+		<div data-role="header">
+				<a href="#home" data-icon="home">Home</a>
+			<h1>Friday Institute Support FAQ</h1>
+	</div><!-- /header -->
+<!-- Start of page: #SpamProblems -->
+<div data-role="page" id="SpamProblems" data-theme="b">
+	<div data-role="header">
+				<a href="#home" data-icon="home">Home</a>
+			<h1>Friday Institute Support FAQ</h1>
+	</div><!-- /header -->
+	
+	<div data-role="content">
+		<h2>Problems with emails going to spam</h2>
+		<h3>Please select deisred button for you email account type.</h3>
+		<p><a href="#Gmail" data-role="button">Gmail</a></p>
+		<p><a href="#postini" data-role="button">Postini</a></p>
+		<p><a href="#DisablePostini" data-role="button">Disable Postini</a></p>
+	</div><!-- Content -->
+	
+</div><!-- /page SpamProblems -->
+
+<!-- Start of page: Disabel Postini-->
+<div data-role="page" id="DisablePostini" data-theme="b">
+	<div data-role="header">
+				<a href="#home" data-icon="home">Home</a>
+			<h1>Friday Institute Support FAQ</h1>
+	</div><!-- /header -->
+	
+	<div data-role="content">
+		<h2>Disable the use of Postini</h2>
+		<p>1) Log into your postini account at <a href="http://junkmail.ncsu.edu" target="_blank">junkmail.ncsu.edu</a></p>
+		<p><img src="login.png" alt="Login" width="525" height="344"/></p>
+		<p>2) Once there, press the My Settings button in the right corner.</p>
+		<p><img src="MySettingsJunk.png" alt="My Settings Junk" width="1355" height="511"/></p>
+		<p>3) Next press the Manage Junk Filters link in the Junk Settings.</p>
+		<p>4) A new page will open. On the left side of the page will be a Junk Email Blocking area.</p>
+		<p><img src="JunkEmailBlocking.png" alt="Junk Email Blocking" width="1394" height="272"/></p>
+		<p>5) Press the ACTIVATED button that is in green. It will then change to red and say DEACTIVATED. Then press Save Settings. </p>
+		<p>6) You are now free to logout and Postini will be disabled.</p>
+
+	</div><!--Content-->
+
+</div><!-- /page Disable Postini-->
+
+<!-- Start of page: Postini-->
+<div data-role="page" id="postini" data-theme="b">
+	<div data-role="header">
+				<a href="#home" data-icon="home">Home</a>
+			<h1>Friday Institute Support FAQ</h1>
+	</div><!-- /header -->
+	
+	<div data-role="content">
+		<h2>Set up a filter to catch emails from fridayinstitute@ncsu.edu</h2>
+		<p>1) Log into your postini account at <a href="http://junkmail.ncsu.edu" target="_blank">junkmail.ncsu.edu</a></p>
+		<p><img src="login.png" alt="Login" width="525" height="344"/></p>
+		<p>2) Once there, press the My Settings button in the right corner.</p>
+		<p><img src="MySettings.png" alt="My Settings" width="1355" height="511"/></p>
+		<p>3) Next press the Approve Senders link in the Junk Settings.</p>
+		<p>4) A new page will open. On the left side of the page will be an Approved Senders area.</p>
+		<p>5) In the Approved senders area, type fridayinstitute@ncsu.edu and press Update Approved Senders.</p>
+		<p><img src="ApprovedSenders.png" alt="Approved Senders" width="518" height="457"/></p>
+		<p>6) You are now free to logout and all futher emails sent to fridayinstitute@ncsu.edu will go directly to your inbox.</p>
+	</div><!--Content-->
+
+</div><!-- /page Postini-->
+
+<!-- Start of page: #Gmail -->
+<div data-role="page" id="Gmail" data-theme="b">
+	<div data-role="header">
+				<a href="#home" data-icon="home">Home</a>
+			<h1>Friday Institute Support FAQ</h1>
+	</div><!-- /header -->
+	
+	<div data-role="content">
+		<h2>Set up a filter to catch emails from fridayinstitute@ncsu.edu</h2>
+		<p>1) Log into your Gmail account at <a href="http://gmail.ncsu.edu" target="_blank">gmail.ncsu.edu</a></p>
+		<p>2) At the top right corner press the button that looks like a gear.</p>
+		<p><img src="settings.png" alt="Settings Menu" width="232" height="323"/></p>
+		<p>3) From the drop down menu, press the Settings button.</p>
+		<p>4) Once on the Settings Page, press the Filters tab.</p>
+		<p><img src="Filter.png" alt="Filter Tab" width="1052" height="94"/></p>
+		<p>5) At the bottom of the filters page, press the "Create Filter" button.</p>
+		<p><img src="CreateFilter.png" alt="Create Filter" width="202" height="70"/></p>
+		<p>6) A small window will open up. In the from line, type fridayinstitute@ncsu.edu. Then press the "Create filter with this search" button.</p>
+		<p><img src="addFilter.png" alt="Add Filter" width="518" height="351"/></p>
+		<p>7) A series of check bokes will appear. Check the "Never sent it to Spam" button as well as the "Also apply filter to # matching conversation".</p>
+		<p>8) Press the "Create filter" button and the filter will be created.</p>
+		<p><img src="SetupFilter.png" alt="Filter setup" width="512" height="389"/></p>
+	</div><!--Content-->
+
+</div><!-- /page Gmail-->
+
+<!-- Start of page: #home -->
+<div data-role="page" id="data.fi.ncsu.edu" data-theme="b">
+
+	<div data-role="header">
+                <a href="#home" data-icon="home">Home</a>
+		<h1>Friday Institute Support FAQ</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<h2>Connecting to data.fi.ncsu.edu</h2>
+		<p>Are you connecting from on or off campus?</p>
+		<p><a href="#data.fi.ncsu.edu.connect" data-role="button">On Campus</a></p>	
+		<p><a href="#data.fi.ncsu.edu.offcampus" data-role="button">Off Campus</a></p>	
+		
+	</div><!-- /content -->
+
+</div><!-- /page home -->
+
+<!-- Start of page: #data.fi.ncsu.edu.connect -->
+<div data-role="page" id="data.fi.ncsu.edu.connect" data-theme="b">
+
+	<div data-role="header">
+                <a href="#home" data-icon="home">Home</a>
+		<h1>Friday Institute Support FAQ</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">
+
+                 <h2>Connecting to data.fi.ncsu.edu from a PC</h2>
+                <p>1. From Windows 7 click Start then Right Click on Computer to select Map Network Drive</p>
+                <p>2. In the Map Network Drive Window Select the drive letter (F: for example)</p>
+                <p>3. Type the mount path from the <a href="#data.fi.ncsu.edu.pcprojectsexportlist">projects list</a>, <a href="#data.fi.ncsu.edu.pcdepartmentsexportlist">departments list</a>, or <a href="#data.fi.ncsu.edu.pchomefolderexport">your home folder</a>.  ie:  \\data.fi.ncsu.edu\gismo</p>
+                <p>4. Select "Reconnect at login"</p>
+                <p>5. Click Connect using different credential then click Finish</p>
+                <p>6. Use the username:  wolftech\&lt;unityid&gt;  For example, user bmbouter would use the username wolftech\bmbouter</p>
+                <p>7. Type your UNITY password.</p>
+	</div><!-- /content -->
+
+</div><!-- /page data.fi.ncsu.edu.connect -->
+
+<!-- Start of page: #data.fi.ncsu.edu.pcexportlist -->
+<div data-role="page" id="data.fi.ncsu.edu.pcexportlist" data-theme="b">
+
+	<div data-role="header">
+                <a href="#home" data-icon="home">Home</a>
+		<h1>Friday Institute Support FAQ</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<h2>data.fi.ncsu.edu URLs for Windows Computers</h2>
+                <ul data-role="listview">
+                    <li><h3>FI EVAL Team</h3><p>\\data.fi.ncsu.edu\fi_eval_team</p></li>
+                    <li><h3>FI STEM Group</h3><p>\\data.fi.ncsu.edu\fi_stem_group</p></li>
+                    <li><h3>GEES</h3><p>\\data.fi.ncsu.edu\gees</p></li>
+                    <li><h3>GISMO</h3><p>\\data.fi.ncsu.edu\gismo</p></li>
+                    <li><h3>LEONARDO</h3><p>\\data.fi.ncsu.edu\leonardo</p></li>
+                    <li><h3>LTBI</h3><p>\\data.fi.ncsu.edu\ltbi</p></li>
+                    <li><h3>MINDSET</h3><p>\\data.fi.ncsu.edu\mindset</p></li>
+                    <li><h3>MISO</h3><p>\\data.fi.ncsu.edu\miso</p></li>
+                    <li><h3>New Learning Ecologies</h3><p>\\data.fi.ncsu.edu\new_learning_ecologies</p></li>
+                    <li><h3>PTMT</h3><p>\\data.fi.ncsu.edu\ptmt</p></li>
+                    <li><h3>VCLSU</h3><p>\\data.fi.ncsu.edu\vclsu</p></li>
+                </ul>
+		
+	</div><!-- /content -->
+
+</div><!-- /page data.fi.ncsu.edu.pcexportlist -->
+
+<!-- Start of page: #vpn.macorpc -->
+<div data-role="page" id="vpn.macorpc" data-theme="b">
+
+	<div data-role="header">
+                <a href="#home" data-icon="home">Home</a>
+		<h1>Friday Institute Support FAQ</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<h2>Connecting to the NCSU VPN</h2>
+		<p>Are you on a Mac or PC?</p>
+		<p><a href="#vpn.mac" data-role="button" data-rel="dialog">Mac</a></p>	
+		<p><a href="#vpn.pc" data-role="button" data-rel="dialog">PC</a></p>	
+		
+	</div><!-- /content -->
+
+</div><!-- /page vpn.macorpc -->
+
+<!-- Start of page: #vpn.mac -->
+<div data-role="page" id="vpn.mac" data-theme="b">
+
+	<div data-role="header">
+                <a href="#home" data-icon="home">Home</a>
+		<h1>Friday Institute Support FAQ</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<h2>Connecting to the NCSU VPN on a Mac</h2>
+		<p>1. Goto your Applications folder</p>	
+		<p>2. Go into the "Cisco" folder</p>	
+		<p>3. Double click the Cisco AnyConnect VPN Client Application</p>	
+		<p>4. Where it says "Connect To:" use "vpn.ncsu.edu"</p>	
+		<p>5. Enter your UNITY username and password and click "Connect"</p>	
+		<p>6. If you receive no errors then you are connected</p>	
+		<p><a href="#data.fi.ncsu.edu.connect" data-role="button">The VPN is Connected</a></p>	
+		<p><a href="#contactmustaphavpn" data-role="button" data-rel="dialog">I Need Help</a></p>	
+		
+	</div><!-- /content -->
+
+</div><!-- /page vpn.mac -->
+
+<!-- Start of page: #vpn.pc -->
+<div data-role="page" id="vpn.pc" data-theme="b">
+
+	<div data-role="header">
+                <a href="#home" data-icon="home">Home</a>
+		<h1>Friday Institute Support FAQ</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<h2>Connecting to the NCSU VPN on a PC</h2>
+		<p>1. Start > Programs > Cisco Systems VPN Client > VPN Client.</p>	
+		<p>2. Where it says "Connect To:" use "vpn.ncsu.edu"</p>	
+		<p>3. Enter your UNITY username and password and click "Connect"</p>	
+		<p>4. If you receive no errors then you are connected</p>	
+		<p><a href="#data.fi.ncsu.edu.connect" data-role="button">The VPN is Connected</a></p>	
+		<p><a href="#contactmustaphavpn" data-role="button" data-rel="dialog">I Need Help</a></p>	
+		
+	</div><!-- /content -->
+
+</div><!-- /page vpn.pc -->
+
+<!-- Start of page: #data.fi.ncsu.edu.offcampus -->
+<div data-role="page" id="data.fi.ncsu.edu.offcampus" data-theme="b">
+
+	<div data-role="header">
+                <a href="#home" data-icon="home">Home</a>
+		<h1>Friday Institute Support FAQ</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<h2>Connecting to data.fi.ncsu.edu from Off Campus</h2>
+		<p>Have you connected to the NCSU VPN yet?</p>
+		<p><a href="#data.fi.ncsu.edu.connect" data-role="button">Yes</a></p>	
+		<p><a href="#vpn.pc" data-role="button">No</a></p>	
+		<p><a href="#contactmustaphavpn" data-role="button" data-rel="dialog">I am not sure</a></p>	
+		
+	</div><!-- /content -->
+
+</div><!-- /page data.fi.ncsu.edu.offcampus -->
+
+<!-- Start of page: #contactmustaphavpn -->
+<div data-role="page" id="contactmustaphavpn" data-theme="b">
+
+	<div data-role="header">
+                <a href="#home" data-icon="home">Home</a>
+		<h1>Friday Institute Support FAQ</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<h2>E-mail Mustapha</h2>
+		<p>1. Ask him to install the NCSU VPN on your computer.</p>		
+		<p>2. Ask him to teach you to connect to NCSU using the VPN.</p>		
+	</div><!-- /content -->
+
+</div><!-- /page contactmustaphavpn -->
+
+<!-- Start of page: #data.fi.ncsu.edu.pcdepartmentsexportlist -->
+<div data-role="page" id="data.fi.ncsu.edu.pcdepartmentsexportlist" data-theme="b">
+
+	<div data-role="header">
+                <a href="#home" data-icon="home">Home</a>
+		<h1>Friday Institute Support FAQ</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<h2>Department Mount Paths for Windows Computers</h2>
+                <ul data-role="listview">
+                    <li><h3>BUSINESSOFFICE</h3><p>\\data.fi.ncsu.edu\businessoffice</p></li>
+                    <li><h3>BUSINESS_OFFICE_CUSTOMERS</h3><p>\\data.fi.ncsu.edu\business_office_customers</p></li>
+                    <li><h3>COMMUNICATIONS</h3><p>\\data.fi.ncsu.edu\communications</p></li>
+                    <li><h3>DIRECTORS</h3><p>\\data.fi.ncsu.edu\directors</p></li>
+                    <li><h3>EVENTS</h3><p>\\data.fi.ncsu.edu\events</p></li>
+                    <li><h3>HR</h3><p>\\data.fi.ncsu.edu\hr</p></li>
+                    <li><h3>IT</h3><p>\\data.fi.ncsu.edu\it</p></li>
+                    <li><h3>OPERATIONS</h3><p>\\data.fi.ncsu.edu\operations</p></li>
+                    <li><h3>OUTREACH</h3><p>\\data.fi.ncsu.edu\outreach</p></li>
+                    <li><h3>RECEPTION</h3><p>\\data.fi.ncsu.edu\reception</p></li>
+                </ul>
+		
+	</div><!-- /content -->
+
+</div><!-- /page data.fi.ncsu.edu.pcdepartmentsexportlist -->
+
+<!-- Start of page: #data.fi.ncsu.edu.pcprojectsexportlist -->
+<div data-role="page" id="data.fi.ncsu.edu.pcprojectsexportlist" data-theme="b">
+
+	<div data-role="header">
+                <a href="#home" data-icon="home">Home</a>
+		<h1>Friday Institute Support FAQ</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<h2>Project Mount Paths for Windows Computers</h2>
+                <ul data-role="listview">
+                    <li><h3>1 TO 1COLLABORATIVE</h3><p>\\data.fi.ncsu.edu\1to1collaborative</p></li>
+                    <li><h3>AIM</h3><p>\\data.fi.ncsu.edu\aim</p></li>
+                    <li><h3>CRYSTALISLAND</h3><p>\\data.fi.ncsu.edu\crystalisland</p></li>
+                    <li><h3>ENRICH</h3><p>\\data.fi.ncsu.edu\enrich</p></li>
+                    <li><h3>EPIC_ED</h3><p>\\data.fi.ncsu.edu\epic_ed</p></li>
+                    <li><h3>FI EVAL Team</h3><p>\\data.fi.ncsu.edu\fi_eval_team</p></li>
+                    <li><h3>FI STEM Group</h3><p>\\data.fi.ncsu.edu\fi_stem_group</p></li>
+                    <li><h3>GEES</h3><p>\\data.fi.ncsu.edu\gees</p></li>
+                    <li><h3>GISMO</h3><p>\\data.fi.ncsu.edu\gismo</p></li>
+                    <li><h3>IRB</h3><p>\\data.fi.ncsu.edu\irb</p></li>
+                    <li><h3>LEONARDO</h3><p>\\data.fi.ncsu.edu\leonardo</p></li>
+                    <li><h3>LTBI</h3><p>\\data.fi.ncsu.edu\ltbi</p></li>
+                    <li><h3>METAANALYSIS</h3><p>\\data.fi.ncsu.edu\metaanalysis</p></li>
+                    <li><h3>MINDSET</h3><p>\\data.fi.ncsu.edu\mindset</p></li>
+                    <li><h3>MISO</h3><p>\\data.fi.ncsu.edu\miso</p></li>
+                    <li><h3>NARRATIVETHEATRE</h3><p>\\data.fi.ncsu.edu\narrativetheatre</p></li>
+                    <li><h3>NCIM</h3><p>\\data.fi.ncsu.edu\ncim</p></li>
+                    <li><h3>NELA</h3><p>\\data.fi.ncsu.edu\nela</p></li>
+                    <li><h3>New Learning Ecologies</h3><p>\\data.fi.ncsu.edu\new_learning_ecologies</p></li>
+                    <li><h3>NOYCE_EVAL</h3><p>\\data.fi.ncsu.edu\noyce_eval</p></li>
+                    <li><h3>OCOP</h3><p>\\data.fi.ncsu.edu\ocop</p></li>
+                    <li><h3>PTMT</h3><p>\\data.fi.ncsu.edu\ptmt</p></li>
+                    <li><h3>RTTT BACKGROUP DATA</h3><p>\\data.fi.ncsu.edu\rtttbackgrounddata</p></li>
+                    <li><h3>RTTT DST</h3><p>\\data.fi.ncsu.edu\rtttdst</p></li>
+                    <li><h3>RTTT PROPOSAL</h3><p>\\data.fi.ncsu.edu\rtttproposal</p></li>
+                    <li><h3>VCLSU</h3><p>\\data.fi.ncsu.edu\vclsu</p></li>
+                </ul>
+		
+	</div><!-- /content -->
+
+</div><!-- /page data.fi.ncsu.edu.pcprojectsexportlist -->
+
+<!-- Start of page: #data.fi.ncsu.edu.pchomefolderexport -->
+<div data-role="page" id="data.fi.ncsu.edu.pchomefolderexport" data-theme="b">
+
+	<div data-role="header">
+                <a href="#home" data-icon="home">Home</a>
+		<h1>Friday Institute Support FAQ</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">
+		<h2>Home Folder Mount Path for Windows Computers</h2>
+                Use the path:
+                <h3>\\data.fi.ncsu.edu\&lt;yourusername&gt;</h3>
+                For example, if the username is bmbouter, the home folder URL would be \\data.fi.ncsu.edu\bmbouter
+		
+	</div><!-- /content -->
+
+</div><!-- /page data.fi.ncsu.edu.pchomefolderexport -->
+
+</body>
+</html>
